@@ -1,6 +1,10 @@
 
 # Using Neo4j to Analyze Object Dependencies and Data Flow
 
+In relational databases, tens, hundreds and even more tables, views, stored procedures and functions were created along project development for data manipulation and reporting purposes. The object dependencies and logics of data flow need to be constantly reviewed for solution architacts, database developers and business users. Neo4j is a perfect tool for investigating the "social network" of objects in a relational database. Using Neo4j and it's Cypher language can provide a quick and comprehensive way for object dependencies and data flow review.
+
+It will only take a few minutes to extracting object relationships from the meta data of a SQL Server database, and then load it into Neo4j to create a graph database for object dependencies and data flow review. In this use case, **Neo4j is used as an analytical tool** to investigate the metadata of SQL Server relational database. 
+
 ### 1. Get object dependency data from SQL Server database
 
 1.1 Create a view in the database that you want to investigate object dependencies using the following SQL query:
