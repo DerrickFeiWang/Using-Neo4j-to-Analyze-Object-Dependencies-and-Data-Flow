@@ -5,7 +5,7 @@
 
 1.1 Create a view in the database that you want to investigate object dependencies using the following SQL query:
 
-When you create an object using sql script, SQL Server capture the query string and store the object dependencies in system views. We can query the system views to get the object dependency information using the following sql scru=ipt.
+When you create an object using sql script, SQL Server capture the query string and store the object dependencies in system views. We can query the system views to get the object dependency information using the following sql script.
 
 ![create view in sql for object dependencies](https://user-images.githubusercontent.com/44976640/48359070-ca986000-e661-11e8-988d-a767b60b862c.JPG)
 
