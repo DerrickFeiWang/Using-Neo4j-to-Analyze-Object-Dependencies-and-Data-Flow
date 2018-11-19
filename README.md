@@ -1,15 +1,15 @@
 
 # Using Neo4j to Analyze Object Dependencies and Data Flow
 
-In relational databases, tens, hundreds and even more tables, views, stored procedures and functions were created along project development for data manipulation and reporting purposes. The object dependencies and logics of data flow need to be constantly reviewed for solution architacts, database developers and business users. Neo4j is a perfect tool for investigating the "social network" of objects in a relational database. Using Neo4j and it's Cypher language can provide a quick and comprehensive way for object dependencies and data flow review.
+In relational databases, tens, hundreds and even more tables, views, stored procedures and functions were created along project development for data manipulation and reporting purposes. The object dependencies and logics of data flow need to be reviewed by solution architacts, database developers and business users from time to time. Neo4j is a perfect tool for investigating the "social network" of objects in a relational database. Neo4j and it's Cypher language can provide a quick and comprehensive way for object dependencies and data flow review.
 
-It will only take a few minutes to extracting object relationships from the meta data of a SQL Server database, and then load it into Neo4j to create a graph database for object dependencies and data flow review. In this use case, **Neo4j is used as an analytical tool** to investigate the metadata of SQL Server relational database. 
+It will only take a few minutes to extract object relationships from the meta data of a SQL Server database, and then load into Neo4j to create a graph database for object dependencies and data flow review. In this use case, **Neo4j is used as an analytical tool** to investigate the metadata of SQL Server relational database. 
 
 ### 1. Get object dependency data from SQL Server database
 
 1.1 Create a view in the database that you want to investigate object dependencies using the following SQL query:
 
-When you create an object using sql script, SQL Server capture the query string and store the object dependencies in system views. We can query the system views to get the object dependency information using the following sql script.
+When an object was created using sql script, SQL Server capture the query string and store the object dependencies in system views. We can query the system views to get the object dependency information using the following sql query.
 
 ![create view in sql for object dependencies](https://user-images.githubusercontent.com/44976640/48359070-ca986000-e661-11e8-988d-a767b60b862c.JPG)
 
